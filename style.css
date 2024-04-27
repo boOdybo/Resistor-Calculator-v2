@@ -1,0 +1,171 @@
+
+
+.resistor {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 400px;
+    /* Define the maximum width to avoid overflow on large screens */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resistor-wings {
+    width: 30%;
+    /* Increase the width slightly to improve the appearance */
+    height: 1.5em;
+    /* Increase the height to match the shape */
+    background-color: rgb(255, 252, 252);
+
+}
+
+.resistor-body {
+    width: 70%;
+    /* Decrease the width slightly to improve the layout */
+    height: 6em;
+    /* Increase the height to improve the appearance */
+    border: 0px solid rgb(255, 253, 253);
+    /* Increase the border size to improve the appearance */
+    border-radius: 10px;
+    /* Increase the corner radius to improve the appearance */
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255, 252, 252);
+}
+
+.band {
+    width: 12%;
+    /* Increase the width to fill the gaps better */
+    height: 100%;
+
+    /* Adjust the color of the band to reduce contrast */
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+    background-color: #ccc;
+    /* Adjust the default background color */
+}
+
+.color-list-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    /* Enable wrapping of items to fit on small screens */
+}
+
+.color-list {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 120px;
+    /* Set the width */
+}
+
+.color-list li {
+    padding: 8px 12px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.color-list li:hover {
+    background-color: #ddd;
+    /* Change the background color on hover */
+}
+
+.output {
+    text-align: center;
+    font-size: 1.2em;
+    /* Increase the font size for confirmation */
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    /* Set the background color */
+    color: white;
+    /* Set the text color */
+    border: none;
+    border-radius: 5px;
+    /* Adjust the border radius */
+    cursor: pointer;
+    /* Change the cursor on hover */
+    width: 100%;
+    /* Set the width */
+    height: 50px;
+    font-size: larger;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #45a049;
+    /* Change the background color on hover */
+}
+
+#resistanceValue{
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: white;
+}
+
+/* Design for small screens */
+@media (max-width: 600px) {
+    .resistor {
+        width: 95%;
+        /* Increase the width to use most of the screen */
+    }
+
+    .color-list-items {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    color: #eee;
+    font-family: sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    color: #f8f8f2;
+    /* Lighter color for headings */
+}
+
+p,
+li {
+    line-height: 1.6;
+    margin: 0 0 20px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    text-align: right;
+    padding: 8px;
+    border: 1px solid #555;
+    /* Light border for table */
+}
+
+th {
+    background-color: #333;
+    /* Slightly darker background for table header */
+}
+
